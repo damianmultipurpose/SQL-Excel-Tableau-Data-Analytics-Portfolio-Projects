@@ -1,16 +1,16 @@
 
 ## Table of Contents
 - [Project Overview](#project-overview)
-- [Excell Pivot Table](#excel-pivot-table)
-- [Tableau Interactive Dashboard](#tableau-interactive-dashboard)
 - [Data Sources](#data-sources)
 - [Tools Used](#tools-used)
 - [Data Cleaning/Preparation](#data-cleaningpreparation)
 - [Exploratory Data Analysis ](#exploratory-data-analysis)
 - [Data Analysis](#data-analysis)
+- [Excel](#excell)
+- [Tableau](#tableau)
 - [Results/Findings](#resultsfindings)
-- [ Reccomendations](#reccomendations)
-- [  Limitations](#limitations)
+- [Recomendations](#recomendations)
+- [Limitations](#limitations)
 - [References](#references)
 
 ---
