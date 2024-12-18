@@ -6,8 +6,8 @@
 - [Data Cleaning/Preparation](#data-cleaningpreparation)
 - [Exploratory Data Analysis ](#exploratory-data-analysis)
 - [Data Analysis](#data-analysis)
-- [Excel](#excel)
-- [Tableau](#tableau)
+- [Excel Pivot](#excel-pivot)
+- [Tableau Dashboard](#tableau-dashboard)
 - [Results/Findings](#resultsfindings)
 - [Recomendations](#recomendations)
 - [Limitations](#limitations)
@@ -246,13 +246,13 @@ where dea.continent is not null
 
 ---
 
-### Excel
+### Excel Pivot
 Details on using Excel to create pivot tables for data trends. (Placeholder for specifics on dataset and process).
 #### Example Pivot Table:
 ![9239](https://github.com/user-attachments/assets/a4ddbb19-7408-4165-b219-9844d3eb1269)
 
 ---
-### Tableau
+### Tableau Dashboard
 Details on creating interactive dashboards in Tableau to visualize insights. (Placeholder for specifics on dataset and dashboard features).
 #### Example Dashboard:
 ![9208](https://github.com/user-attachments/assets/06ffa572-7ec2-4610-8e5b-a68511f81392)
