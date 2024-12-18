@@ -15,169 +15,286 @@
 
 ---
 ### Project Overview
-Create a comprehensive sales Dashboard for the Executive Team at a theoretical Bicycle reader company i work for from 2016-2018,The management team want to know-:
-- Revenue per region
-- Revenue per store
-- Revenue per product category
-- Revenue per Brand
-- A list of top customers and sales
-
----
-
-### Excell Pivot Table 
-![9239](https://github.com/user-attachments/assets/a4ddbb19-7408-4165-b219-9844d3eb1269)
-
----
-
-
-
-### Tableau Interactive Dashboard
-
-![9208](https://github.com/user-attachments/assets/06ffa572-7ec2-4610-8e5b-a68511f81392)
+This project demonstrates a comprehensive analysis of multiple datasets using SQL, Excel, and Tableau to showcase data analysis and visualization skills. Each tool was applied to a separate dataset tailored for specific tasks, including:
+- SQL Data Analysis: Focused on analyzing COVID-19 cases, deaths, and vaccination trends.
+- SQL Data Cleaning: Addressed data inconsistencies and prepared a new dataset for advanced analysis.
+- Excel: Used for creating pivot tables to summarize data trends.
+- Tableau: Developed an interactive dashboard to visualize insights.
 
 ---
 
 ### Data Sources
-- Sample Data: Fictional sales, product, and customer data generated for analysis.
-- Database Schema: Designed and populatedstore
-- Revenue per product  category
-- Revenue per brand
-- A list of the top customers and sales using SQL scripts.
+ #### SQL Data Analysis:
+ 
+- Dataset: CovidDeaths and CovidVaccinations from [Our World in Data](https://ourworldindata.org/covid-deaths)
+- Process: Filtered in Excel to focus on key metrics like location, date, total_cases, new_cases, total_deaths, and population.
+- Prepared Files: Imported into SQL Server as two tables (CovidDeaths and CovidVaccinations).
+
+#### SQL Data Cleaning:
+- Dataset: (Placeholder for the dataset to be specified).
+- Process: Cleaned inconsistencies like null values, duplicates, and formatting issues.
+
+#### Excel:
+- Dataset: A trimmed dataset tailored for pivot table analysis (to be specified).
+- Process: Organized and summarized data trends.
+- Output: Creating Pivot tables and charts
+
+#### Tableau:
+- Dataset: Preprocessed dataset for visualization (to be specified).
+- Process: Used for interactive dashboards showing COVID-19 insights.
 
 ---
 
 ### Tools Used
-- SQL Server-Data Exploration [Download here](https://instagram.com/damianmultipurpose)
-- Excell-Pivot tables and charts for interactive Sales Dashboards.  [Download here](https://instagram.com/damianmultipurpose)
-- Tableau-Interactive dashboards and data visualization.  [Download here](https://instagram.com/damianmultipurpose)
+- SQL Server- For data analysis and cleaning. [See here](https://instagram.com/damianmultipurpose)
+- Excell-For data preparation and pivot tables.  [See here](https://instagram.com/damianmultipurpose)
+- Tableau-For creating interactive dashboards.  [See here](https://instagram.com/damianmultipurpose)
 
 ---
 ### Data Cleaning/Preparation
-The data used in this project was clean and consistent throughout all stages of the analysis. No unwanted, redundant, or missing values were present. Data integrity was maintained when processed in SQL Server, imported into Excel, and further visualized in Tableau Public, ensuring accurate and reliable analysis.
+This section demonstrates SQL techniques used to clean and prepare datasets for analysis. (Placeholder for details on dataset, cleaning steps, and sample queries).
+
+#### Key Techniques Used:
+- Removing duplicates
+- Handling null values
+- Normalizing data formats
 
 ---
 ### Exploratory Data Analysis
-EDA involved exploring the sales data to answer key questions scuch as:
+This section includes queries and insights derived from analyzing the CovidDeaths and CovidVaccinations tables.
 
-1.Which products are driving the most revenue?
+Key Questions Explored:
 
-2.What are the purchasing trends across different customer demographics?
+1.Total Cases vs. Total Deaths: What is the likelihood of dying if infected with COVID?
 
-3.Are there seasonal fluctuations in sales?
+2.Infection Rate Per Population: Which locations have the highest infection rates?
 
-4.Which store locations are performing the best?
+3.Vaccination Impact: How do vaccination rates correlate with reduced deaths?
 
 ---
 ### Data Analysis
 Include some interesting codes/features worked with
 ```sql
--- Select the necessary information to analyze customer orders, product sales, and store performance
-SELECT 
-    ord.order_id,  -- Order ID to uniquely identify each order
-    CONCAT(cus.first_name, ' ', cus.last_name) AS full_name,  -- Customer's full name for better readability
-    cus.city,  -- City of the customer
-    cus.state,  -- State of the customer
-    ord.order_date,  -- The date when the order was placed
-    SUM(ite.quantity) AS total_units,  -- Total units ordered in this particular order (sum of all items ordered)
-    SUM(ite.quantity * ite.list_price) AS revenue,  -- Revenue from this order (total units * price per unit)
-    pro.product_name,  -- Name of the product being purchased
-    cat.category_name,  -- Product category (e.g., mountain bikes, road bikes)
-    sto.store_name,  -- Name of the store where the order was placed
-    CONCAT(staf.first_name, ' ', staf.last_name) AS sales_rep  -- Name of the sales representative who handled the order
+/*
+Covid 19 Data Exploration 
 
--- Joining various tables to bring together information from multiple sources
-FROM sales.orders ord
--- Joining the orders table with the customers table to get customer details
-JOIN sales.customers cus ON ord.customer_id = cus.customer_id
--- Joining the order_items table to get details about the products in each order
-JOIN sales.order_items ite ON ord.order_id = ite.order_id
--- Joining the products table to get product names and other details
-JOIN production.products pro ON ite.product_id = pro.product_id
--- Joining the categories table to get the category of each product
-JOIN production.categories cat ON pro.category_id = cat.category_id
--- Joining the stores table to get the store name where the order was placed
-JOIN sales.stores sto ON ord.store_id = sto.store_id
--- Joining the staffs table to identify which sales representative handled the order
-JOIN sales.staffs staf ON ord.staff_id = staf.staff_id
+Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions,Aliasing with Aggregate Functions, Creating Views, Converting Data Types
 
--- Grouping the data by key attributes to get an aggregate summary of the orders
-GROUP BY
-    ord.order_id,  -- Grouping by Order ID to ensure that each order is summarized individually
-    CONCAT(cus.first_name, ' ', cus.last_name),  -- Grouping by full name of the customer
-    cus.city,  -- Grouping by city of the customer for geographic analysis
-    cus.state,  -- Grouping by state of the customer
-    ord.order_date,  -- Grouping by order date to analyze order trends over time
-    pro.product_name,  -- Grouping by product name to see which products are selling the most
-    cat.category_name,  -- Grouping by product category to identify top categories
-    sto.store_name,  -- Grouping by store name to compare sales performance across stores
-    CONCAT(staf.first_name, ' ', staf.last_name)  -- Grouping by sales representative to track performance by staff;
+*/
+--select all data from  CovidDeaths Table  
+Select *
+From ProjectPortfolio..CovidDeaths
+Where continent is not null 
+order by 3,4
+--select all data from  CovidVaccination Table  
+Select *
+From ProjectPortfolio..CovidVaccination
+Where continent is not null 
+order by 3,4
+
+-- Select Data that we are going to be starting with
+
+Select Location, date, total_cases, new_cases, total_deaths, population
+From ProjectPortfolio..CovidDeaths
+Where continent is not null 
+order by 1,2
+
+
+-- Total Cases vs Total Deaths
+-- Shows likelihood of dying if you contract covid in your country
+
+Select Location, date, total_cases,total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
+From ProjectPortfolio..CovidDeaths
+Where location like '%Tanzania%'
+and continent is not null 
+order by 1,2
+
+
+-- Total Cases vs Population
+-- Shows what percentage of population infected with Covid
+
+Select Location, date, Population, total_cases,  (total_cases/population)*100 as PercentPopulationInfected
+From ProjectPortfolio..CovidDeaths
+--Where location like '%Tanzania%'
+order by 1,2
+
+
+-- Countries with Highest Infection Rate compared to Population
+
+Select Location, Population, MAX(total_cases) as HighestInfectionCount,  Max((total_cases/population))*100 as PercentPopulationInfected
+From ProjectPortfolio..CovidDeaths
+--Where location like '%Tanzania%'
+Group by Location, Population
+order by PercentPopulationInfected desc
+
+
+-- Countries with Highest Death Count per Population
+
+Select Location, MAX(cast(Total_deaths as int)) as TotalDeathCount
+From ProjectPortfolio..CovidDeaths
+--Where location like '%Tanzania%'
+Where continent is not null 
+Group by Location
+order by TotalDeathCount desc
+
+
+
+-- BREAKING THINGS DOWN BY CONTINENT
+
+-- Showing contintents with the highest death count per population
+
+Select continent, MAX(cast(Total_deaths as int)) as TotalDeathCount
+From ProjectPortfolio..CovidDeaths
+--Where location like '%%'
+Where continent is not null 
+Group by continent
+order by TotalDeathCount desc
+
+
+
+-- GLOBAL NUMBERS
+--total_cases,total_deaths_Death percentage globally
+
+Select SUM(new_cases) as total_cases, SUM(cast(new_deaths as int)) as total_deaths, SUM(cast(new_deaths as int))/SUM(New_Cases)*100 as DeathPercentage
+From ProjectPortfolio..CovidDeaths
+--Where location like '%states%'
+where continent is not null 
+--Group By date
+order by 1,2
+
+
+
+-- Total Population vs Vaccinations
+-- Shows Percentage of Population that has recieved at least one Covid Vaccine
+
+Select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations
+, SUM(CONVERT(int,vac.new_vaccinations)) OVER (Partition by dea.Location Order by dea.location, dea.Date) as RollingPeopleVaccinated
+--, (RollingPeopleVaccinated/population)*100
+From ProjectPortfolio..CovidDeaths dea
+Join ProjectPortfolio..CovidVaccination vac
+	On dea.location = vac.location
+	and dea.date = vac.date
+where dea.continent is not null 
+order by 2,3
+
+
+-- Using CTE to perform Calculation on Partition By in previous query
+
+With PopvsVac (Continent, Location, Date, Population, New_Vaccinations, RollingPeopleVaccinated)
+as
+(
+Select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations
+, SUM(CONVERT(int,vac.new_vaccinations)) OVER (Partition by dea.Location Order by dea.location, dea.Date) as RollingPeopleVaccinated
+--, (RollingPeopleVaccinated/population)*100
+From ProjectPortfolio..CovidDeaths dea
+Join ProjectPortfolio..CovidVaccination vac
+	On dea.location = vac.location
+	and dea.date = vac.date
+where dea.continent is not null 
+--order by 2,3
+)
+Select *, (RollingPeopleVaccinated/Population)*100
+From PopvsVac
+
+
+
+-- Using Temp Table to perform Calculation on Partition By in previous query
+
+DROP Table if exists #PercentPopulationVaccinated
+Create Table #PercentPopulationVaccinated
+(
+Continent nvarchar(255),
+Location nvarchar(255),
+Date datetime,
+Population numeric,
+New_vaccinations numeric,
+RollingPeopleVaccinated numeric
+)
+
+Insert into #PercentPopulationVaccinated
+Select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations
+, SUM(CONVERT(int,vac.new_vaccinations)) OVER (Partition by dea.Location Order by dea.location, dea.Date) as RollingPeopleVaccinated
+--, (RollingPeopleVaccinated/population)*100
+From ProjectPortfolio..CovidDeaths dea
+Join ProjectPortfolio..CovidVaccination vac
+	On dea.location = vac.location
+	and dea.date = vac.date
+--where dea.continent is not null 
+--order by 2,3
+
+Select *, (RollingPeopleVaccinated/Population)*100
+From #PercentPopulationVaccinated
+
+
+
+
+-- Creating View to store data for later visualizations
+
+Create View PercentPopulationVaccinated as
+Select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations
+, SUM(CONVERT(int,vac.new_vaccinations)) OVER (Partition by dea.Location Order by dea.location, dea.Date) as RollingPeopleVaccinated
+--, (RollingPeopleVaccinated/population)*100
+From ProjectPortfolio..CovidDeaths dea
+Join ProjectPortfolio..CovidVaccination vac
+	On dea.location = vac.location
+	and dea.date = vac.date
+where dea.continent is not null 
+
+
 ```
 
 
 ---
-### Results/Findings**
-The analysis results are summarised as follows:
-    1.Top Revenue Drivers:
-        Mountain Bikes and Road Bikes were the highest contributors to revenue.
-    2.Customer Trends:
-        Urban customers showed a preference for Road Bikes, with a significant share of total purchases.
-    3.Seasonality in Sales:
-        Sales consistently peaked during summer, indicating strong seasonal demand.
-    4.Store Performance:
-        One store outperformed others, attributed to better staff performance and customer engagement.
-    5.Product Categories:
-        Accessories and apparel had lower revenue compared to bikes but showed steady growth over time.
-        
-        ---
-### Reccomendations****
-1.Inventory Management:
 
-    Increase stock for high-demand products like Mountain Bikes and Road Bikes during peak seasons.
-
-2.Marketing Strategy:
-
-    Target urban customers with promotions on Road Bikes and complementary accessories.
-
-3.Seasonal Campaigns:
-
-    Launch marketing campaigns during spring to maximize summer sales potential.
-
-4.Store Performance Optimization:
-
-    Analyze staff performance and replicate successful strategies across underperforming stores.
-
-5.Diversification:
-
-    Explore opportunities to expand product offerings in underperforming categories like accessories and apparel.
-
+### Excel
+Details on using Excel to create pivot tables for data trends. (Placeholder for specifics on dataset and process).
+#### Example Pivot Table:
+![9239](https://github.com/user-attachments/assets/a4ddbb19-7408-4165-b219-9844d3eb1269)
 
 ---
-### Limitations****
-1.Sample Data:
-
-    The analysis is based on fictional sales data, which may not accurately reflect real-world scenarios or business operations.
-
-2.Data Scope:
-
-    The dataset covers only a limited timeframe (2016–2018) and does not include more recent or predictive trends.
-
-3.Customer Demographics:
-
-    Limited demographic information about customers restricts the ability to perform deeper behavioral analysis.
-
-4.Seasonality Assumptions:
-
-    Seasonal trends observed are specific to the dataset and may not generalize to other years or locations.
-
-5.Static Data:
-The data is static, and no real-time updates or dynamic queries were implemented in this analysis.
+### Tableau
+Details on creating interactive dashboards in Tableau to visualize insights. (Placeholder for specifics on dataset and dashboard features).
+#### Example Dashboard:
+![9208](https://github.com/user-attachments/assets/06ffa572-7ec2-4610-8e5b-a68511f81392)
 
 ---
 
-### References****
 
- [Work The Data Youtube Channel](https://www.youtube.com/watch?v=1pHYKdyRvrw&t=3748s)
+### Results/Findings
+Key insights from the analysis:
+1.Countries with higher vaccination rates had lower death rates.
+
+2.Regions like Europe and the Americas were most impacted in terms of cases and deaths.
+
+3.Vaccination campaigns significantly reduced new infections.
+
+---
+
+### Recomendations
+1.Promote vaccination efforts in low-coverage areas.
+
+2.Allocate resources to regions with high infection rates.
+
+3.Develop long-term monitoring systems for better health interventions.
+
+
+---
+### Limitations
+1.The analysis is based on publicly available data and may not reflect real-time scenarios.
+
+2.Limited scope to key metrics; further insights require granular data (e.g., by age or comorbidities).
+
+3.Data quality depends on accurate reporting from various countries.
+
+---
+
+### References
+
+ [Our World in Data - COVID-19 Dataset](https://ourworldindata.org/covid-deaths)
  
  [@AlexTheAnalyst Youtube Channel](https://www.youtube.com/@AlexTheAnalyst)
+
+ [@freeCodeCamp.Org Youtube Channel](https://www.youtube.com/watch?v=PSNXoAs2FtQ&t=8234s)
  
- [CHATGPT.COM](https://chatgpt.com/c/675ca5f8-6bd8-8002-bfab-a677b20c933c)
+ 
+ 
