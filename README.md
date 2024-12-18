@@ -6,7 +6,7 @@
 - [Data Cleaning/Preparation](#data-cleaningpreparation)
 - [Exploratory Data Analysis ](#exploratory-data-analysis)
 - [Data Analysis](#data-analysis)
-- [Excel](#excell)
+- [Excel](#excel)
 - [Tableau](#tableau)
 - [Results/Findings](#resultsfindings)
 - [Recomendations](#recomendations)
