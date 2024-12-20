@@ -46,7 +46,7 @@ This project demonstrates a comprehensive analysis of multiple datasets using SQ
 ---
 
 ### Tools Used
-- SQL Server- For data analysis and cleaning. [See here](https://instagram.com/damianmultipurpose)
+- SQL Server- For data analysis and cleaning. [See here](https://github.com/damianmultipurpose/SQL-Excel-Tableau-Data-Analytics-Portfolio-Projects/tree/main/SQL_Projects)
 - Excell-For data preparation and pivot tables.  [See here](https://instagram.com/damianmultipurpose)
 - Tableau-For creating interactive dashboards.  [See here](https://instagram.com/damianmultipurpose)
 
