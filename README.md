@@ -31,7 +31,7 @@ This project demonstrates a comprehensive analysis of multiple datasets using SQ
 - Prepared Files: Imported into SQL Server as two tables (CovidDeaths and CovidVaccinations).
 
 #### SQL Data Cleaning:
-- Dataset: Nashville Housing Data for Data Cleaning.[Our World in Data](https://ourworldindata.org/covid-deaths)
+- Dataset: Nashville Housing Data for Data Cleaning.[Nashville Housing Data for Data Cleaning](https://github.com/damianmultipurpose/SQL-Excel-Tableau-Data-Analytics-Portfolio-Projects/blob/main/Nashville%20Housing%20Data%20for%20Data%20Cleaning.xlsx)
 - Process: Cleaned inconsistencies like null values, duplicates, and formatting issues.
 
 #### Excel:
