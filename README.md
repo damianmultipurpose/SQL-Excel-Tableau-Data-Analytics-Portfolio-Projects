@@ -40,15 +40,15 @@ This project demonstrates a comprehensive analysis of multiple datasets using SQ
 - Output: Creating Pivot tables and charts
 
 #### Tableau:
-- Dataset: Preprocessed dataset for visualization (to be specified).
-- Process: Used for interactive dashboards showing COVID-19 insights.
+- Dataset: Preprocessed dataset for visualization [kaggle-dataset](https://public.tableau.com/app/profile/damian.kimaro/viz/AirBnBFullProject_17349102691680/Dashboard1).
+- Process: Used for interactive dashboards showing AirBnb listings and trends.
 
 ---
 
 ### Tools Used
 - SQL Server- For data analysis and cleaning. [Explore My SQL Data Cleaning and Analysis Project](https://github.com/damianmultipurpose/SQL-Excel-Tableau-Data-Analytics-Portfolio-Projects/tree/main/SQL_Projects)
 - Excell-For data preparation and pivot tables.  [See here](https://instagram.com/damianmultipurpose)
-- Tableau-For creating interactive dashboards.  [See here](https://instagram.com/damianmultipurpose)
+- Tableau-For creating interactive dashboards.  [Explore AirBnb Dashboard here] (https://public.tableau.com/app/profile/damian.kimaro/viz/AirBnBFullProject_17349102691680/Dashboard1)
 
 ---
 ### Data Cleaning/Preparation
