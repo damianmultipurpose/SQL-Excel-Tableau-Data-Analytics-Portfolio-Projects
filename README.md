@@ -48,7 +48,7 @@ This project demonstrates a comprehensive analysis of multiple datasets using SQ
 ### Tools Used
 - SQL Server- For data analysis and cleaning. [Explore My SQL Data Cleaning and Analysis Project](https://github.com/damianmultipurpose/SQL-Excel-Tableau-Data-Analytics-Portfolio-Projects/tree/main/SQL_Projects)
 - Excell-For data preparation and pivot tables.  [See here](https://instagram.com/damianmultipurpose)
-- Tableau-For creating interactive dashboards.  [Explore AirBnb Dashboard here] (https://public.tableau.com/app/profile/damian.kimaro/viz/AirBnBFullProject_17349102691680/Dashboard1)
+- Tableau-For creating interactive dashboards.  [Explore AirBnb Dashboard here](https://public.tableau.com/app/profile/damian.kimaro/viz/AirBnBFullProject_17349102691680/Dashboard1)
 
 ---
 ### Data Cleaning/Preparation
@@ -595,6 +595,9 @@ Key insights from the analysis:
  [@AlexTheAnalyst Youtube Channel](https://www.youtube.com/@AlexTheAnalyst)
 
  [@freeCodeCamp.Org Youtube Channel](https://www.youtube.com/watch?v=PSNXoAs2FtQ&t=8234s)
+ 
+ [@kaggle dataset for Tableau](https://www.kaggle.com/datasets/dcschmidt/airbnbcopenhagen?select=calendar.csv)
+ 
  
  
  
