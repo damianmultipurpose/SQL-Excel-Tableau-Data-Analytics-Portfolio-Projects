@@ -553,7 +553,15 @@ Details on using Excel to create pivot tables for data trends. (Placeholder for 
 
 ---
 ### Tableau Dashboard
-Details on creating interactive dashboards in Tableau to visualize insights. (Placeholder for specifics on dataset and dashboard features).
+- Average Price per Bedroom: Visualize the average price segmented by the number of bedrooms.
+
+- Distinct Count of Bedroom Listings: Display the total number of unique listings categorized by bedroom count.
+
+- Price by Zipcode: Analyze the price distribution across different zip codes.
+
+- Price per Zipcode in Map Representation: Use a geographical map to represent prices by zip code with color-coded data points.
+
+- Revenue for Year: Calculate and display yearly revenue trends for listings.
 #### Example Dashboard:
 [Click to view Tableau Dashboard](https://public.tableau.com/app/profile/damian.kimaro/viz/AirBnBFullProject_17349102691680/Dashboard1)
 
