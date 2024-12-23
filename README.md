@@ -572,7 +572,8 @@ The visualizations presented in this project include the following insights:
 
 
 ### Results/Findings
-Key insights from the analysis:
+
+Key insights from the SQL Data Exploration analysis:
 1.Countries with higher vaccination rates had lower death rates.
 
 2.Regions like Europe and the Americas were most impacted in terms of cases and deaths.
@@ -582,6 +583,7 @@ Key insights from the analysis:
 ---
 
 ### Recomendations
+Key Reccomendations from the SQL Data Exploration analysis:
 1.Promote vaccination efforts in low-coverage areas.
 
 2.Allocate resources to regions with high infection rates.
@@ -591,6 +593,7 @@ Key insights from the analysis:
 
 ---
 ### Limitations
+Key Limitations  from the SQL Data Exploration analysis:
 1.The analysis is based on publicly available data and may not reflect real-time scenarios.
 
 2.Limited scope to key metrics; further insights require granular data (e.g., by age or comorbidities).
