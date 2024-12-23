@@ -555,7 +555,7 @@ Details on using Excel to create pivot tables for data trends. (Placeholder for 
 ### Tableau Dashboard
 Details on creating interactive dashboards in Tableau to visualize insights. (Placeholder for specifics on dataset and dashboard features).
 #### Example Dashboard:
-![9208](https://github.com/user-attachments/assets/06ffa572-7ec2-4610-8e5b-a68511f81392)
+[Click to view Tableau Dashboard](https://public.tableau.com/app/profile/damian.kimaro/viz/AirBnBFullProject_17349102691680/Dashboard1)
 
 ---
 
