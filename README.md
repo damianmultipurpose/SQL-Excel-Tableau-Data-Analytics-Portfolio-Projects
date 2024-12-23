@@ -553,6 +553,9 @@ Details on using Excel to create pivot tables for data trends. (Placeholder for 
 
 ---
 ### Tableau Dashboard
+A user-friendly, interactive dashboard that provides actionable insights into Airbnb listings and trends.
+
+The visualizations presented in this project include the following insights:
 - Average Price per Bedroom: Visualize the average price segmented by the number of bedrooms.
 
 - Distinct Count of Bedroom Listings: Display the total number of unique listings categorized by bedroom count.
