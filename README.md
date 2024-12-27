@@ -36,18 +36,18 @@ This project demonstrates a comprehensive analysis of multiple datasets using SQ
 
 #### Excel:
 - Dataset: This dataset has been cleaned, and pivot tables, charts, and dashboards with slicers have been created to analyze bike store sales trends. [AlexTheAnalyst-github](https://github.com/AlexTheAnalyst/Excel-Tutorial/blob/main/Excel%20Project%20Dataset.xlsx).
--Process: Cleaned and organized data, creating pivot tables, charts, and dashboards to analyze trends in bike store sales.
+- Process: Cleaned and organized data, creating pivot tables, charts, and dashboards to analyze trends in bike store sales.
 - Output: Created pivot tables, charts, and an interactive dashboard to visualize bike store sales trends.
 
 #### Tableau:
-- Dataset: Preprocessed dataset for visualization [kaggle-dataset](https://public.tableau.com/app/profile/damian.kimaro/viz/AirBnBFullProject_17349102691680/Dashboard1).
+- Dataset: Preprocessed dataset for visualization [kaggle-dataset](https://www.kaggle.com/datasets/dcschmidt/airbnbcopenhagen?select=calendar.csv).
 - Process: Used for interactive dashboards showing AirBnb listings and trends.
 
 ---
 
 ### Tools Used
 - SQL Server- For data analysis and cleaning. [Explore My SQL Data Cleaning and Analysis Project](https://github.com/damianmultipurpose/SQL-Excel-Tableau-Data-Analytics-Portfolio-Projects/tree/main/SQL_Projects)
-- Excell-For data preparation and pivot tables.  [Explore my Excell Full Project here]([https://instagram.com/damianmultipurpose](https://1drv.ms/x/s!Aip2gPMM47bwa11c6Wk2drZpEfY?e=EnEHB9))
+- Excell-For data preparation and pivot tables.  [Explore my Excell Full Project here](https://1drv.ms/x/s!Aip2gPMM47bwa11c6Wk2drZpEfY?e=EnEHB9)
 - Tableau-For creating interactive dashboards.  [Explore AirBnb Dashboard here](https://public.tableau.com/app/profile/damian.kimaro/viz/AirBnBFullProject_17349102691680/Dashboard1)
 
 ---
