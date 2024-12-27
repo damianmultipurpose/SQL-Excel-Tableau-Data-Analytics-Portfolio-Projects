@@ -18,7 +18,7 @@
 This project demonstrates a comprehensive analysis of multiple datasets using SQL, Excel, and Tableau to showcase data analysis and visualization skills. Each tool was applied to a separate dataset tailored for specific tasks, including:
 - SQL Data Analysis: Focused on analyzing COVID-19 cases, deaths, and vaccination trends.
 - SQL Data Cleaning: Addressed data inconsistencies and prepared a new dataset for advanced analysis.
-- Excel: Used for creating pivot tables to summarize data trends.
+- Excel: Cleaned and analyzed bike store sales data using Excel, creating pivot tables and an interactive dashboard.
 - Tableau: Developed an interactive dashboard to visualize insights.
 
 ---
@@ -35,9 +35,9 @@ This project demonstrates a comprehensive analysis of multiple datasets using SQ
 - Process: Cleaned inconsistencies like null values, duplicates, and formatting issues.
 
 #### Excel:
-- Dataset: A trimmed dataset tailored for pivot table analysis (to be specified).
-- Process: Organized and summarized data trends.
-- Output: Creating Pivot tables and charts
+- Dataset: This dataset has been cleaned, and pivot tables, charts, and dashboards with slicers have been created to analyze bike store sales trends. [AlexTheAnalyst-github](https://github.com/AlexTheAnalyst/Excel-Tutorial/blob/main/Excel%20Project%20Dataset.xlsx).
+-Process: Cleaned and organized data, creating pivot tables, charts, and dashboards to analyze trends in bike store sales.
+- Output: Created pivot tables, charts, and an interactive dashboard to visualize bike store sales trends.
 
 #### Tableau:
 - Dataset: Preprocessed dataset for visualization [kaggle-dataset](https://public.tableau.com/app/profile/damian.kimaro/viz/AirBnBFullProject_17349102691680/Dashboard1).
@@ -47,7 +47,7 @@ This project demonstrates a comprehensive analysis of multiple datasets using SQ
 
 ### Tools Used
 - SQL Server- For data analysis and cleaning. [Explore My SQL Data Cleaning and Analysis Project](https://github.com/damianmultipurpose/SQL-Excel-Tableau-Data-Analytics-Portfolio-Projects/tree/main/SQL_Projects)
-- Excell-For data preparation and pivot tables.  [See here](https://instagram.com/damianmultipurpose)
+- Excell-For data preparation and pivot tables.  [Explore my Excell Full Project here]([https://instagram.com/damianmultipurpose](https://1drv.ms/x/s!Aip2gPMM47bwa11c6Wk2drZpEfY?e=EnEHB9))
 - Tableau-For creating interactive dashboards.  [Explore AirBnb Dashboard here](https://public.tableau.com/app/profile/damian.kimaro/viz/AirBnBFullProject_17349102691680/Dashboard1)
 
 ---
@@ -552,7 +552,7 @@ where dea.continent is not null
 - Created pivot tables to summarize sales data.
 - Designed a dashboard titled BIKE SALES Dashboard with key insights and visualizations.
 #### Excell Project Demonstration:
-[Excell Full Project](https://1drv.ms/x/s!Aip2gPMM47bwa11c6Wk2drZpEfY?e=EnEHB9)
+[Click to view my excell project](https://1drv.ms/x/s!Aip2gPMM47bwa11c6Wk2drZpEfY?e=EnEHB9)
 
 ---
 ### Tableau Dashboard
