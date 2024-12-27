@@ -6,7 +6,7 @@
 - [Data Cleaning/Preparation](#data-cleaningpreparation)
 - [Exploratory Data Analysis ](#exploratory-data-analysis)
 - [Data Analysis](#data-analysis)
-- [Excel Pivot](#excel-pivot)
+- [Excel project](#excel-project)
 - [Tableau Dashboard](#tableau-dashboard)
 - [Results/Findings](#resultsfindings)
 - [Recomendations](#recomendations)
@@ -546,10 +546,13 @@ where dea.continent is not null
 
 ---
 
-### Excel Pivot
-Details on using Excel to create pivot tables for data trends. (Placeholder for specifics on dataset and process).
-#### Example Pivot Table:
-![9239](https://github.com/user-attachments/assets/a4ddbb19-7408-4165-b219-9844d3eb1269)
+### Excel project
+- Performed data cleaning by removing duplicates and replacing abbreviations (e.g., "M" -> "Married," "S" -> "Single").
+- Transformed data by adding age ranges using IF statements.
+- Created pivot tables to summarize sales data.
+- Designed a dashboard titled BIKE SALES Dashboard with key insights and visualizations.
+#### Excell Project Demonstration:
+[Excell Full Project](https://1drv.ms/x/s!Aip2gPMM47bwa11c6Wk2drZpEfY?e=EnEHB9)
 
 ---
 ### Tableau Dashboard
